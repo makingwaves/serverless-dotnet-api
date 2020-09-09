@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build and deploy:
+  build-and-deploy:
     name: build and deploy
     runs-on: ubuntu-latest
     strategy:
