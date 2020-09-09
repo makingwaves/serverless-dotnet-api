@@ -1,0 +1,40 @@
+name: .NET Core Deploy Serverless
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build and deploy:
+    name: build and deploy
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.301
+    - name: Install dependencies
+      run: |
+        cd ServerlessDotnetApi
+        dotnet restore
+        dotnet tool install -g Amazon.Lambda.Tools
+    - name: Build
+      run: |
+        cd ServerlessDotnetApi
+        dotnet lambda package --configuration release --framework netcoreapp3.1 --output-package bin/release/netcoreapp3.1/deploy-package.zip --msbuild-parameters "-p:PublishReadyToRun=true --self-contained false"
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1.4.3
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: serverless deploy
+      uses: serverless/github-action@master
+      with:
+        args: deploy -v
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
