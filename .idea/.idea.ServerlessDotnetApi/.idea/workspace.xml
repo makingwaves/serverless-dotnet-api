@@ -8,19 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dd9aa35-9d0c-4e8e-a0d4-b80424586c7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerlessDotnetApi.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerlessDotnetApi/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerlessDotnetApi/LambdaEntryPoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerlessDotnetApi/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerlessDotnetApi/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerlessDotnetApi/ServerlessDotnetApi.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerlessDotnetApi/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerlessDotnetApi/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerlessDotnetApi/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerlessDotnetApi/appsettings.json" afterDir="false" />
-    </list>
+    <list default="true" id="9dd9aa35-9d0c-4e8e-a0d4-b80424586c7b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,8 +83,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599647159773</updated>
-      <workItem from="1599647179249" duration="3504000" />
+      <workItem from="1599647179249" duration="4583000" />
     </task>
+    <task id="LOCAL−00001" summary="init">
+      <created>1599655948714</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1599655948715</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,5 +112,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1599655957091">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599655957091" />
+    <state x="714" y="406" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1599655926155">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="406" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599655926155" />
   </component>
 </project>
